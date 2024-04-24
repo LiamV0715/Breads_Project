@@ -1,5 +1,6 @@
 // DEPENDENCIES
 const express = require('express')
+const methodOverride = require('method-override')
 
 // CONFIGURATION
 require('dotenv').config()
@@ -10,7 +11,7 @@ const app = express()
 app.set('views', __dirname + '/views')
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
-// MIDDLEWARE (is here twice?)
+app.use(methodOverride('_method'))
 app.use(express.static('public'))
 
 
@@ -27,6 +28,7 @@ app.use('/breads', breadsController)
 app.get('*', (req, res) => {
   res.send('404')
 })
+
 
 
 // LISTEN
