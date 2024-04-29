@@ -11,7 +11,7 @@ function Default(html) {
     </head>
     <body>
       <div className="wrapper">
-        <header>
+        <header className="text-center">
           <h1><a href="/breads">BreadCRUD</a></h1>
         </header>
         <div className="container">
