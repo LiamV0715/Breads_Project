@@ -1,8 +1,8 @@
 {
-  "name": "breads_project",
+  "name": "d03",
   "version": "1.0.0",
-  "description": "Express full CRUD with SSR JSX",
-  "main": "server.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -11,11 +11,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
     "express-react-views": "^0.11.0",
     "method-override": "^3.0.0",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "mongoose": "^6.2.4"
   }
 }
