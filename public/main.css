@@ -26,17 +26,17 @@ header {
 
 a:link { 
   text-decoration: none; 
-  color: bisque;
+  color: rgb(255, 251, 247);
 } 
 a:visited { 
   text-decoration: none; 
-  color: bisque;
+  color: rgb(246, 255, 196);
 } 
 a:hover { 
   text-decoration: none; 
-  color: bisque;
+  color: rgb(226, 247, 159);
 } 
 a:active { 
   text-decoration: none; 
-  color: bisque;
+  color: rgb(255, 135, 251);
 }
