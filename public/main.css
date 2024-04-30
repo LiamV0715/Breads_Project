@@ -6,7 +6,7 @@ img {
 }
 
 body {
-  background-color: lightblue;
+  background-color: rgb(244, 192, 237);
   text-align: center;
 }
 
@@ -14,6 +14,6 @@ main {
   margin-right: 30px;
   margin-left: 30px;
   margin-top: 10px;
-  background-color: white;
+  background-color: rgb(255, 212, 235);
   border-radius: 25px;
 }
