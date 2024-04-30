@@ -22,7 +22,7 @@ app.use(methodOverride('_method'))
 
 // ROUTES
 app.get('/', (req, res) => {
-  res.send('<h1>Welcome to an Awesome App about Breads!</h1>')
+  res.render('home')
 })
   
 // Breads
@@ -35,5 +35,5 @@ app.get('*', (req, res) => {
 
 // LISTEN
 app.listen(PORT, () => {
-  console.log('nomming at port', PORT);
+  console.log('open at port', PORT);
 })
