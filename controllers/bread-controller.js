@@ -16,15 +16,7 @@ breads.get("/new", (req, res) => {
   res.render("new");
 });
 
-breads.get("/:id", (req, res) => {
-  console.log(req.body);
-  Bread.findById(req.params.id).then((foundBread) => {
-    res.render("show", {
-      bread: foundBread,
-    });
-  });
-});
-
+//SHOW
 breads.get("/:id", (req, res) => {
   Bread.findById(req.params.id)
     .then((foundBread) => {
@@ -36,6 +28,8 @@ breads.get("/:id", (req, res) => {
       res.send("404");
     });
 });
+
+
 
 // CREATE
 breads.post("/", (req, res) => {

@@ -12,7 +12,7 @@ function Index({ breads, title }) {
             console.log(index);
             return (
               <li key={index}>
-                <a href={`/breads/${bread.id}`}>{bread.name}</a>
+                <a href={`/breads/${bread._id}`}>{bread.name}</a>
                 <img src={bread.image}></img>
               </li>
             );

@@ -1,7 +1,7 @@
 const React = require('react')
 const Default = require('./layouts/default')
 
-function Show ({bread, index}) {
+function Show ({bread}) {
     // Confirm we are getting our bread data in the terminal.
     // console.log(bread.name)
       return (
@@ -18,6 +18,9 @@ function Show ({bread, index}) {
             </p>
             <img src={bread.image} alt={bread.name} />
             <a href={`/breads/${bread.id}/edit`}><button>Edit</button></a>
+            <form action={`/breads/${bread._id}?_method=DELETE`} method="POST">
+              <input type='submit' value="DELETE"/>
+            </form>
             <li><a href="/breads">Go home</a></li>
         </Default>
       )
