@@ -17,3 +17,26 @@ main {
   background-color: rgb(255, 212, 235);
   border-radius: 25px;
 }
+
+header {
+  text-shadow: 2px 5px 2px rgb(161, 161, 161);
+  color: rgb(207, 192, 114);
+  text-decoration: none;
+}
+
+a:link { 
+  text-decoration: none; 
+  color: bisque;
+} 
+a:visited { 
+  text-decoration: none; 
+  color: bisque;
+} 
+a:hover { 
+  text-decoration: none; 
+  color: bisque;
+} 
+a:active { 
+  text-decoration: none; 
+  color: bisque;
+}
