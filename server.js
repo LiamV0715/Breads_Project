@@ -25,12 +25,17 @@ app.get('/', (req, res) => {
   res.render('home')
 })
   
-// Breads
+// breads
 const breadsController = require('./controllers/bread-controller.js')
 app.use('/breads', breadsController)
 
+// bakers 
+const bakersController = require('./controllers/bakers_controller.js')
+app.use('/bakers', bakersController)
+
+// 404 Page
 app.get('*', (req, res) => {
-    res.send('<h1>404 NOT FOUND</h1>')
+  res.send('404')
 })
 
 // LISTEN
