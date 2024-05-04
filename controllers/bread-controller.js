@@ -51,13 +51,19 @@ breads.post("/", (req, res) => {
   res.redirect("/breads");
 });
 
-breads.get("/:id/edit", (req, res) => {
-  Bread.findById(req.params.id).then((foundBread) => {
-    res.render("edit", {
-      bread: foundBread,
-    });
-  });
-});
+// EDIT
+breads.get('/:id/edit', (req, res) => {
+  Baker.find()
+    .then(foundBakers => {
+        Bread.findById(req.params.id)
+          .then(foundBread => {
+            res.render('edit', {
+                bread: foundBread, 
+                bakers: foundBakers 
+            })
+          })
+    })
+})
 
 // UPDATE
 breads.put("/:id", (req, res) => {
