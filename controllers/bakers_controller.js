@@ -24,14 +24,14 @@ baker.get('/:id', (req, res) => {
         })
 })
 
-// Delete
+// delete
 baker.delete('/:id', (req, res) => {
     Baker.findByIdAndDelete(req.params.id) 
       .then(deletedBaker => { 
-        console.log(deletedBaker)
         res.status(303).redirect('/breads')
       })
 })
+
 
 // Seed
 baker.get('/data/seed', (req, res) => {
