@@ -24,23 +24,33 @@ header {
   text-shadow: 2px 5px 2px rgb(161, 161, 161);
   color: rgb(207, 192, 114);
   text-decoration: none;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 
 a:link { 
   text-decoration: none; 
-  color: rgb(255, 251, 247);
+  color: rgb(68, 137, 60);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 } 
 a:visited { 
   text-decoration: none; 
-  color: rgb(246, 255, 196);
+  color: rgb(81, 216, 48);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 } 
 a:hover { 
   text-decoration: none; 
-  color: rgb(226, 247, 159);
+  color: rgb(178, 235, 255);
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
 } 
 a:active { 
   text-decoration: none; 
   color: rgb(255, 135, 251);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 form {
